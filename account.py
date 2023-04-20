@@ -30,7 +30,7 @@ class Account:
         :amount: The amount to be withdrawn.
         :bool: True if the withdrawal transaction is successful, False otherwise.
         """
-        if amount > 0 and amount <= self.__balance:
+        if amount > 0 and amount <= self.__account_balance:
             self.__balance -= amount
             return True
         else:
