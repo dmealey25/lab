@@ -19,7 +19,7 @@ class Account:
         :bool: True if the deposit transaction is successful, False otherwise.
         """
         if amount > 0:
-            self.__balance += amount
+            self.__account_balance += amount
             return True
         else:
             return False
@@ -31,7 +31,7 @@ class Account:
         :bool: True if the withdrawal transaction is successful, False otherwise.
         """
         if amount > 0 and amount <= self.__account_balance:
-            self.__balance -= amount
+            self.__account_balance -= amount
             return True
         else:
             return False
@@ -41,7 +41,7 @@ class Account:
         Get the current account balance.
         :balance: The current account balance.
         """
-        return self.__balance
+        return self.__account_balance
 
     def get_account_name(self) -> str:
         """
