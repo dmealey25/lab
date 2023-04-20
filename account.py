@@ -11,7 +11,7 @@ class Account:
             return False
 
     def withdraw(self, amount):
-        if amount > 0 and amount <= self.__balance:
+        if amount > 0 and amount <= self.__account_balance:
             self.__account_balance -= amount
             return True
         else:
